@@ -1,0 +1,12 @@
+<h2>There are {{count}} words in your text</h2>
+
+<h1>Fulltext</h1>
+{{fulltext}}
+
+<h1>Word Count:</h1>
+{% for word,counttotal in wdict %}
+{{word}}-{{counttotal}}
+<br>
+
+
+{% endfor %}
